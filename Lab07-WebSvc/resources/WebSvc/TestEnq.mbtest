@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.etools.mft.unittest.core.models.client="http:///com/ibm/etools/mft/unittest/core/models/client.ecore" xmlns:com.ibm.wbit.comptest.common.models.event="http:///com/ibm/etools/mft/unittest/common/models/event.ecore" xmlns:jms="http:///com/ibm//etools/mft/unittest/common/model2/jms" xmlns:model2="http:///com/ibm//etools/mft/unittest/common/model2" xmlns:mq="http:///com/ibm//etools/mft/unittest/common/model2/mq">
+  <com.ibm.etools.mft.unittest.core.models.client:EclipseClient iD="1214351641625-8" eventTrace="/1" clientID="1214351641625-8">
+    <scopes xsi:type="model2:FlowTestScope" iD="1214351641625-11">
+      <testModules xsi:type="model2:TestMsgFlow" iD="1214351641640-14"/>
+      <settings xsi:type="model2:FlowSettings"/>
+      <settings xsi:type="model2:DeploymentSettings"/>
+      <settings xsi:type="mq:MQSettings"/>
+      <settings xsi:type="jms:JMSSettings"/>
+      <settings xsi:type="mq:MQMessageHeaders"/>
+      <settings xsi:type="jms:JMSMessageHeaders"/>
+      <messageHeaders xsi:type="mq:MQHeader" iD="1214351641625-12" characterSet="819" encoding="273" putApplicationName="Websphere MQ Client for Java" putApplicationType="28" userId="MUSR_MQADMIN" headerName="Header from .enqueue"/>
+    </scopes>
+  </com.ibm.etools.mft.unittest.core.models.client:EclipseClient>
+  <com.ibm.wbit.comptest.common.models.event:ExecutionEventTrace iD="1214351641625-9" children="/2"/>
+  <mq:InteractiveMQEnqueueEvent iD="1214351641625-10" timestamp="1214351641625" children="/3" host="localhost" port="1415" queueManager="MQ6401B" queue="PING_IN" mqmdId="1214351641625-12">
+    <request xsi:type="model2:TestMessage" iD="1214351641640-13" header="/0/@scopes.0/@messageHeaders.0">
+      <properties name="messageSource" stringValue="sourceView"/>
+      <properties name="plainText" stringValue="&lt;InMsg>&#xA;&lt;text>Hello Again&lt;/text>&#xA;&lt;/InMsg>"/>
+    </request>
+  </mq:InteractiveMQEnqueueEvent>
+  <mq:MQInformationEvent name="Message sent to MQ Queue &quot;PING_IN&quot;" iD="1214351767703-15" host="localhost" port="1415" queueManager="MQ6401B" queue="PING_IN" readOnly="true" clientID="1214351641625-8" parentID="1214351641625-10">
+    <message xsi:type="model2:TestMessage" iD="1214351641640-13" header="/0/@scopes.0/@messageHeaders.0">
+      <properties name="messageSource" stringValue="sourceView"/>
+      <properties name="plainText" stringValue="&lt;InMsg>&#xA;&lt;text>Hello Again&lt;/text>&#xA;&lt;/InMsg>"/>
+      <headerBeenUsed xsi:type="mq:MQHeader" iD="1214351767718-17" applicationIdData="                                " applicationOriginData="    " characterSet="819" encoding="273" format="        " putApplicationName="Websphere MQ Client for Java" putApplicationType="28" putDateTime="Tue Jun 24 19:56:07 EDT 2008" replyToQueueManagerName="                                                " replyToQueueName="                                                " userId="MUSR_MQADMIN"/>
+    </message>
+  </mq:MQInformationEvent>
+</xmi:XMI>

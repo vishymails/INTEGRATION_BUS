@@ -1,0 +1,23 @@
+Timestamps are formatted in local time, 420 minutes before GMT.
+Trace written by version 10000; formatter version 10000 (build S000-L150316.10572 on amd64_nt_4)
+
+2015-10-16 06:30:39.082536     5528   UserTrace   BIP3907I: Message received and propagated to 'out' terminal of input node 'SimpleFlowWithTrace.IN'. 
+2015-10-16 06:30:39.083416     5528   UserTrace   BIP6060I: Node 'SimpleFlowWithTrace.IN' used parser type ''Properties'' to process a portion of the incoming message of length '0' bytes beginning at offset '0'. 
+2015-10-16 06:30:39.083660     5528   UserTrace   BIP6061I: Node 'SimpleFlowWithTrace.IN' used parser type ''MQMD'' to process a portion of the incoming message of length '364' bytes beginning at offset '0'. The parser type was selected based on value ''MQHMD'' from the previous parser. 
+2015-10-16 06:30:39.084044     5528   UserTrace   BIP6061I: Node 'SimpleFlowWithTrace.IN' used parser type ''XML'' to process a portion of the incoming message of length '35' bytes beginning at offset '364'. The parser type was selected based on value ''XML'' from the previous parser. 
+2015-10-16 06:30:39.084292     5528   UserTrace   BIP2539I: Node 'SimpleFlowWithTrace.Trace': Evaluating expression ''Root'' at ('', '1.14'). This resolved to ''Root''. The result was ''ROW... Root Element Type=16777216 NameSpace='' Name='Root' Value=NULL''. 
+2015-10-16 06:30:39.107724     5528   UserTrace   BIP4067I: Message propagated to output terminal for trace node 'SimpleFlowWithTrace.Trace'. 
+                                       The trace node 'SimpleFlowWithTrace.Trace' has received a message and is propagating it to any nodes connected to its output terminal. 
+                                       No user action required. 
+2015-10-16 06:30:39.107976     5528   UserTrace   BIP2537I: Node 'SimpleFlowWithTrace.Test_Version=2': Executing statement   ''BEGIN ... END;'' at ('.Check_for_V2.Main', '2.2'). 
+2015-10-16 06:30:39.108028     5528   UserTrace   BIP2537I: Node 'SimpleFlowWithTrace.Test_Version=2': Executing statement   ''IF Root.XML.InMsg.Version = 2 THEN... ELSEIF Root.XML.InMsg.Version = 1 OR Root.XML.InMsg.Version = 3 THEN... ELSE... END IF;'' at ('.Check_for_V2.Main', '3.3'). 
+2015-10-16 06:30:39.108084     5528   UserTrace   BIP2539I: Node '': Evaluating expression ''Root.XML.InMsg.Version'' at ('.Check_for_V2.Main', '4.4'). This resolved to ''Root.XML.InMsg.Version''. The result was ''ROW... Root Element Type=16777216 NameSpace='' Name='Version' Value='2'''. 
+2015-10-16 06:30:39.108356     5528   UserTrace   BIP2539I: Node '': Evaluating expression ''Root.XML.InMsg.Version = 2'' at ('.Check_for_V2.Main', '4.27'). This resolved to ''ROW... Root Element Type=16777216 NameSpace='' Name='Version' Value='2' = 2''. The result was ''TRUE''. 
+2015-10-16 06:30:39.108404     5528   UserTrace   BIP2537I: Node 'SimpleFlowWithTrace.Test_Version=2': Executing statement   ''RETURN TRUE;'' at ('.Check_for_V2.Main', '5.9'). 
+2015-10-16 06:30:39.108416     5528   UserTrace   BIP4004I: Message propagated to 'true' terminal of filter node 'SimpleFlowWithTrace.Test_Version=2'. 
+2015-10-16 06:30:39.108564     5528   UserTrace   BIP7944I: A message is being processed in node ''SimpleFlowWithTrace.REPLY'', with the following attributes derived from the policy at '''': ''logLabel: SimpleFlowWithTrace.REPLY''. 
+                                       Each message that is processed by the node might use different attributes derived from a policy. This message records the attribute values that are used for a specific message. 
+                                       No user action required. 
+
+Threads encountered in this trace:
+  5528

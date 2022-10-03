@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema targetNamespace="http://www.BPMDemo.com/Customer" xmlns:tns="http://www.BPMDemo.com/Customer" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="CustomerType">
+		<xsd:sequence>
+	<xsd:element name="CustomerID" type="xsd:string"/>
+			<xsd:element name="Prefix" type="xsd:string"/>
+			<xsd:element name="Firstname" type="xsd:string"/>
+			<xsd:element name="Middlename" type="xsd:string"/>
+			<xsd:element name="LastName" type="xsd:string"/>
+			<xsd:element name="Title" type="xsd:string"/>
+			<xsd:element name="CustomerType" type="xsd:string"/>
+			<xsd:element name="CustomerName" type="xsd:string"/>
+			<xsd:element name="OfficePhoneNo" type="xsd:string"/>
+			<xsd:element name="MobilePhoneNo" type="xsd:string"/>
+			<xsd:element name="FaxNo" type="xsd:string"/>
+			<xsd:element name="EmailAddress" type="xsd:string"/>
+			<xsd:element name="BillStreetNo" type="xsd:string"/>
+			<xsd:element name="BillCity" type="xsd:string"/>
+			<xsd:element name="BillState" type="xsd:string"/>
+			<xsd:element name="BillPostCode" type="xsd:string"/>
+			<xsd:element name="BillCountry" type="xsd:string"/>
+			<xsd:element name="ShipStreet" type="xsd:string"/>
+			<xsd:element name="ShipCity" type="xsd:string"/>
+			<xsd:element name="ShipState" type="xsd:string"/>
+			<xsd:element name="ShipPostCode" type="xsd:string"/>
+			<xsd:element name="ShipCountry" type="xsd:string"/>
+			<xsd:element name="RegNDate" type="xsd:string"/>
+			<xsd:element name="LastUpdateDate" type="xsd:string"/>
+			<xsd:element name="Notes" type="xsd:string"/>
+			</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="Customer" type="tns:CustomerType"/>
+</xsd:schema>

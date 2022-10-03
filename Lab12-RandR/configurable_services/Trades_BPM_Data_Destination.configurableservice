@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurableservice csName="Trades_Redirect_to_BPM" csType="DataDestination" egForReplay="server1" endpoint="wmq:/msg/queue/TRADE.FIX.IN@IIBQM" endpointType="WMQDestination"/>

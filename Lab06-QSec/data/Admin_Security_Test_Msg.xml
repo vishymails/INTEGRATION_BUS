@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tns:JKE_In_Request xmlns:tns="http://www.ibm.lab.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <requestAction>O</requestAction>
+  <requestDate>O</requestDate>
+  <customerNumber>1</customerNumber>
+  <customerName>ACME</customerName>
+  <customerDetails>
+    <customerAddress1>1254 Main St</customerAddress1>
+    <customerAddress2>Suite 12</customerAddress2>
+    <customerCity>Dime Box</customerCity>
+    <customerState>Texas</customerState>
+    <customerCountry>USA</customerCountry>
+    <customerPostalCode>76543</customerPostalCode>
+    <customerCreditLimit>1200</customerCreditLimit>
+    <customerCreditScore>123</customerCreditScore>
+  </customerDetails>
+  <contactDetails>
+    <contactName> Freddy Bloggs</contactName>
+    <contactPhoneNumber>555-123-6543</contactPhoneNumber>
+  </contactDetails>
+  <requestDecision>Y</requestDecision>
+  <comments>Just a Comment</comments>
+</tns:JKE_In_Request>

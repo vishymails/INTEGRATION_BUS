@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script progid="%W% %I%" progname="IBM Integration API (CMP) Exerciser" progver="8.0">
+    <method name="testCreateEG" owner="classTesterBroker">
+        <parameter type="com.ibm.broker.config.proxy.BrokerProxy" value="IIBNODE_NOQM"/>
+        <parameter type="java.lang.String" value="server2"/>
+    </method>
+</script>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://TradeServ" xmlns:Q1="http://www.BPMDemo.com/Employee" xmlns:tns="http://TradeServ">
+    <xsd:import namespace="http://www.BPMDemo.com/Employee" schemaLocation="TradeServ-0.xsd"/>
+    <xsd:element ibmSchExtn:docRoot="true" name="operation1" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input1" nillable="true" type="Q1:tradeType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element ibmSchExtn:docRoot="true" name="operation1Response" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output1" nillable="true" type="Q1:tradeType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+        </xsd:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tns="http://www.BPMDemo.com/Employee"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.BPMDemo.com/Employee">
+	<xsd:complexType name="tradeRequestType">
+		<xsd:sequence>
+			<xsd:element name="Tradeserv_tradeOrderID" type="xsd:string" />
+			<xsd:element name="Tradeserv_customerID" type="xsd:string" />
+			<xsd:element name="Tradeserv_tradeStock" type="xsd:string" />
+			<xsd:element name="Tradeserv_tradeAmount" type="xsd:string" />
+        	</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="tradeOrderRequest" type="tns:tradeRequestType"></xsd:element>
+</xsd:schema>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurableservice backoutQueue="SYSTEM.BROKER.DC.BACKOUT" commitCount="10" commitIntervalSecs="5" csName="Trades" csType="DataCaptureStore" dataSourceName="TRADES" egForRecord="server1" egForView="server1" queueName="SYSTEM.BROKER.DC.RECORD" schema="IIBADMIN" threadPoolSize="10" useCoordinatedTransaction="false"/>

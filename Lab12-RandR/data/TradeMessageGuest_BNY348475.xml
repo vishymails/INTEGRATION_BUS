@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trade:tradeOrder xmlns:trade="http://www.ibm.com/TradeOrder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/TradeOrder trade.xsd ">
+  <trade:tradeOrderID>BNY348475</trade:tradeOrderID>
+  <trade:customerID>GU123456</trade:customerID>
+  <trade:tradeStock>MSFT</trade:tradeStock>
+  <trade:tradeAmount>5000</trade:tradeAmount>
+</trade:tradeOrder>

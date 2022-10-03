@@ -1,0 +1,19 @@
+* Queue setup scripts for Exercise 7  
+*
+* (c) Copyright IBM Corp. 2015 
+*
+* US Government Users Restricted Rights - Use duplication or
+* disclosure restricted by GSA ADP Schedule Contract with
+* IBM Corp
+*
+* Queue definitions for WM646 Exercise 7 	
+* These commands are to be run against the queue manager IIBQM
+*
+def ql(PING_IN) replace
+*
+def ql(PING_OUT) replace
+*
+def ql(FAILURE) replace
+*
+*
+end

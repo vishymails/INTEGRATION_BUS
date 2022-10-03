@@ -1,0 +1,28 @@
+* Queue setup scripts for Exercise 12  
+*
+* (c) Copyright IBM Corp. 2015 
+*
+* US Government Users Restricted Rights - Use duplication or
+* disclosure restricted by GSA ADP Schedule Contract with
+* IBM Corp
+*
+* Queue definitions for WM646 Exercise 12	
+* These commands are to be run against the queue manager IIBQM
+*
+define ql(TRADE.VALIDATE.IN) replace
+define ql(TRADE.CUST.TYPE.IN) replace
+define ql(TRADE.GOLD.IN) replace
+define ql(TRADE.REGULAR.IN) replace
+define ql(TRADE.VALIDATION.FAILURE.IN) replace
+define ql(TRADE.GUEST.IN) replace
+define ql(TRADE.RECONCILIATION.IN) replace
+define ql(TRADE.COMPLETE.IN) replace
+define ql(TRADE.COMPLETE.OUT) replace
+define ql(TRADE.FIX.IN) replace
+define ql(TRADE.FIX.OUT) replace
+
+
+define ql(TRADE.REPLAY.INPUT) replace
+
+define ql(RECORD.REPLAY.SUB) replace
+DEFINE SUB ('RECORD.REPLAY.SUB') TOPICSTR('IIBNODE_WITHQM/Monitoring/#') TOPICOBJ('SYSTEM.BROKER.MB.TOPIC') USERDATA(' ') VARUSER(ANY) WSCHEMA(TOPIC) DESTQMGR('IIBQM') DEST('RECORD.REPLAY.SUB') DESTCLAS(PROVIDED) EXPIRY(UNLIMITED) REPLACE

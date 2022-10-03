@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurableservice csName="Trades_Source" csType="DataCaptureSource" dataCaptureStore="Trades" topic="$SYS/Broker/IIBNODE_WITHQM/Monitoring/server1/#"/>

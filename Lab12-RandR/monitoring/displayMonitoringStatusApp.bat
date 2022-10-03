@@ -1,0 +1,1 @@
+mqsireportflowmonitoring IIBNODE_WITHQM -n -e server1 -k Trades -f %2

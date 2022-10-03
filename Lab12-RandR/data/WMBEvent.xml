@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmb:event xmlns:wmb="http://www.ibm.com/xmlns/prod/websphere/messagebroker/6.1.0/monitoring/event" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/xmlns/prod/websphere/messagebroker/6.1.0/monitoring/event WMBEvent.xsd ">
+  <wmb:eventPointData>
+    <wmb:eventData wmb:eventSchemaVersion="" wmb:productVersion="">
+      <wmb:eventIdentity wmb:eventName="Event from external system"/>
+      <wmb:eventSequence wmb:creationTime="2012-12-31T12:00:00"/>
+      <wmb:eventCorrelation wmb:localTransactionId="CN100200/A" wmb:parentTransactionId="BNY809092" wmb:globalTransactionId="200"/>
+    </wmb:eventData>
+    <wmb:messageFlowData>
+      <wmb:broker wmb:name="MB8BROKER"/>
+      <wmb:executionGroup wmb:name="default"/>
+      <wmb:messageFlow wmb:name="" wmb:threadId="" wmb:uniqueFlowName=""/>
+      <wmb:node wmb:nodeLabel="" wmb:nodeType=""/>
+    </wmb:messageFlowData>
+  </wmb:eventPointData>
+</wmb:event>

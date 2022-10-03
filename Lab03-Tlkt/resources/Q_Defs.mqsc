@@ -1,0 +1,25 @@
+* Queue setup scripts for Exercise 2  
+*
+* (c) Copyright IBM Corp. 2015 
+*
+* US Government Users Restricted Rights - Use duplication or
+* disclosure restricted by GSA ADP Schedule Contract with
+* IBM Corp
+*
+* Queue definitions for WM646 Exercise 3 \	
+* These commands are to be run against the queue manager IIBQM
+*
+def ql(IN) replace
+*
+def ql(REPLY) replace
+*
+def ql(FAILURE) replace
+*
+def ql(UNKNOWN) replace
+*
+def ql(FALSE) replace
+*
+def ql(CATCH) replace
+*
+*
+end

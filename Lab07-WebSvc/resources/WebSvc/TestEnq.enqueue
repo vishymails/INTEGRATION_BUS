@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnqueueMessage QueueManager="MQ642BRK" QueueName="PING_IN" host="localhost" port="1415"><Message xml:space="preserve">&lt;InMsg&gt;
+&lt;text&gt; Hello Again&lt;/text&gt;
+&lt;/InMsg&gt;</Message><MQMD applicationIdData="                                " applicationOriginData="    " backoutCount="0" characterSet="819" encoding="273" expiry="-1" feedback="0" format="        " messageFlags="0" messageSequenceNumber="1" messageType="8" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationName="Websphere MQ Client for Java" putApplicationType="28" putDateTime="1149352248670" replyToQueueManagerName="                                                " replyToQueueName="                                                " report="0" userId="MUSR_MQADMIN"/></EnqueueMessage>
